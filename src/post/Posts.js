@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { list } from "./apiPost";
-import DefaultPost from "../images/mountains.jpg";
+// import DefaultPost from "../images/mountains.jpg";
 import { Link } from "react-router-dom";
 
 class Posts extends Component {
@@ -50,7 +50,7 @@ class Posts extends Component {
                 <img
                   src={`${process.env.REACT_APP_API_URL}/post/photo/${post._id}`}
                   alt={post.title}
-                  onError={(i) => (i.target.src = `${DefaultPost}`)}
+                  //onError={(i) => (i.target.src = `${DefaultPost}`)}
                   className="img-thunbnail mb-3"
                   style={{ height: "200px", width: "100%" }}
                 />
